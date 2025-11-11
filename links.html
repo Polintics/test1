@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Источники</title>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+  </head>
+  <body id="index">
+    <nav id="head">
+      <a href="index.html">Главная</a>
+      <a href="works.html">Проекты</a>
+      <a href="links.html" class="active">Источники</a>
+      <a href="dom.html"
+        ><img src="./img/more.svg" alt="" class="moreimg"
+      /></a>
+    </nav>
+    <h1>Источники и материалы</h1>
+
+    <h2>Портрет</h2>
+
+    <a href="./img/portrait.jpg" target="_blank">
+      <img
+        src="./img/portrait.jpg"
+        alt="Проект Ивана Леонидова"
+        class="thumbnail"
+      />
+    </a>
+
+    <h2>Источники</h2>
+    <table>
+      <tr>
+        <th>Источник</th>
+        <th>Описание</th>
+        <th>Изображение</th>
+        <th>Ссылка</th>
+      </tr>
+      <tr>
+        <td>Музей архитектуры</td>
+        <td>Архив проектов конструктивистов</td>
+        <td class="cell-img"><img src="./img/museum.jpg" alt="Музей" /></td>
+        <td><a href="https://muar.ru" target="_blank">Перейти</a></td>
+      </tr>
+      <tr>
+        <td>Архив Леонидова</td>
+        <td>Собрание эскизов и макетов</td>
+        <td class="cell-img">
+          <img src="./img/scetch.jpeg" alt="Эскиз Леонидова" />
+        </td>
+        <td>
+          <a
+            href="https://ru.wikipedia.org/wiki/Леонидов,_Иван_Ильич"
+            target="_blank"
+            >Wikipedia</a
+          >
+        </td>
+      </tr>
+    </table>
+
+    <section id="contacts">
+      <h2>Контактная форма</h2>
+      <form action="https://httpbin.org/get" method="get" target="_blank">
+        <label
+          >Фамилия:
+          <input type="text" name="lastname" value="Иванов" required /> </label
+        ><br />
+
+        <label
+          >Имя:
+          <input type="text" name="firstname" value="Иван" required /> </label
+        ><br />
+
+        <label
+          >Группа:
+          <input type="text" name="group" value="А-23" required /> </label
+        ><br />
+
+        <label
+          >Мобильный телефон:
+          <input
+            type="tel"
+            name="phone"
+            value="+79991234567"
+            required
+          /> </label
+        ><br />
+
+        <label
+          >Электронная почта:
+          <input
+            type="email"
+            name="email"
+            value="test@example.com"
+            required
+          /> </label
+        ><br />
+
+        <label
+          >Дата отправки:
+          <input
+            type="date"
+            name="send_date"
+            value="2025-11-04"
+            required
+          /> </label
+        ><br />
+
+        <input type="submit" value="Отправить" />
+      </form>
+    </section>
+
+    <hr />
+
+    <section id="feedback">
+      <h2>Форма отзывов о сайте</h2>
+      <form action="https://httpbin.org/get" method="get" target="_blank">
+        <label
+          >Имя:
+          <input type="text" name="username" value="Мария" required /> </label
+        ><br />
+
+        <label
+          >Возраст:
+          <input
+            type="number"
+            name="age"
+            value="25"
+            min="10"
+            max="120"
+          /> </label
+        ><br />
+
+        <p>Как вы оцениваете сайт?</p>
+        <label
+          ><input type="radio" name="rating" value="excellent" checked />
+          Отлично</label
+        >
+        <label><input type="radio" name="rating" value="good" /> Хорошо</label>
+        <label><input type="radio" name="rating" value="bad" /> Плохо</label
+        ><br />
+
+        <p>Что вам понравилось:</p>
+        <label
+          ><input type="checkbox" name="likes_design" value="yes" checked />
+          Дизайн</label
+        >
+        <label
+          ><input type="checkbox" name="likes_content" value="yes" />
+          Содержание</label
+        >
+        <label
+          ><input type="checkbox" name="likes_easy" value="yes" checked />
+          Простота использования</label
+        ><br />
+
+        <label
+          >Дата посещения:
+          <input type="date" name="visit_date" value="2025-11-01" /> </label
+        ><br />
+
+        <label
+          >Пароль для подтверждения:
+          <input
+            type="password"
+            name="confirm_password"
+            value="12345"
+          /> </label
+        ><br />
+
+        <input type="hidden" name="source" value="leonidov_site_feedback" />
+
+        <input type="submit" value="Отправить отзыв" />
+      </form>
+    </section>
+
+    <a href="#head" class="btn">
+      <h3>К началу страницы</h3>
+      <img src="./img/arrowtop.svg" alt="" />
+    </a>
+  </body>
+</html>

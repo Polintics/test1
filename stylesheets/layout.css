@@ -55,12 +55,12 @@ p {
 
 .dots {
   list-style-type: disc;
-  margin-left: 40px; /* немного отступа слева, чтобы точки не прилипали к краю */
+  margin-left: 40rem; /* немного отступа слева, чтобы точки не прилипали к краю */
   padding-left: 0;
 }
 #number {
   list-style-type: decimal;
-  margin-left: 40px; /* немного отступа слева, чтобы точки не прилипали к краю */
+  margin-left: 40rem; /* немного отступа слева, чтобы точки не прилипали к краю */
   padding-left: 0;
 }
 
@@ -74,9 +74,8 @@ li {
 }
 .indexConteiner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 1532rem;
-  margin-top: 150rem;
 }
 
 .indexConteinerText {
@@ -84,6 +83,7 @@ li {
   flex-direction: column;
   width: 917rem;
   gap: 50rem;
+  margin-top: 70rem;
 }
 
 .portrait img {
@@ -105,7 +105,10 @@ h2 {
   text-align: left;
   line-height: 80rem;
   width: 1532rem;
-  margin-top: 200rem;
+  margin-top: 20rem;
+}
+.portrait{
+  margin-top: 30rem;
 }
 .btn {
   display: flex;
@@ -251,3 +254,61 @@ nav a.active {
   text-decoration: underline;
 }
 
+/* Контейнер, если нужно расположить карточки красиво */
+#sources-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Карточка */
+.card {
+  background: #fff;              /* цвет фона */
+  border-radius: 12px;           /* скругление */
+  padding: 16px;                 /* внутренние отступы */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* тень */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Ховер-эффект */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Изображение в карточке */
+.card img {
+  width: 100%;
+  height: 160px;         /* можешь изменить */
+  object-fit: cover;     /* обрезает красиво */
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Заголовок */
+.card h3 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+/* Текст */
+.card p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+/* Ссылка */
+.card-link {
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  color: #007aff;
+  font-weight: 600;
+}
+.card-link:hover {
+  text-decoration: underline;
+}

@@ -32,5 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
       else result.textContent = 'Не выполняется ни одно из неравенств';
     });
   }
-
 });

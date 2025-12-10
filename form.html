@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проекты</title>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+  </head>
+  <body id="index">
+    <nav id="head">
+      <a href="index.html">Главная</a>
+      <a href="form.html" class="active">Форма</a>
+      <a href="links.html">Источники</a>
+    </nav>
+    <section id="feedback">
+      <h2>Форма отзывов о сайте</h2>
+      <form action="https://httpbin.org/get" method="get" target="_blank">
+        <label
+          >Имя:
+          <input type="text" name="username" value="Мария" required /> </label
+        ><br />
+
+        <label
+          >Возраст:
+          <input
+            type="number"
+            name="age"
+            value="25"
+            min="10"
+            max="120"
+          /> </label
+        ><br />
+
+        <p>Как вы оцениваете сайт?</p>
+        <label
+          ><input type="radio" name="rating" value="excellent" checked />
+          Отлично</label
+        >
+        <label><input type="radio" name="rating" value="good" /> Хорошо</label>
+        <label><input type="radio" name="rating" value="bad" /> Плохо</label
+        ><br />
+
+        <p>Что вам понравилось:</p>
+        <label
+          ><input type="checkbox" name="likes_design" value="yes" checked />
+          Дизайн</label
+        >
+        <label
+          ><input type="checkbox" name="likes_content" value="yes" />
+          Содержание</label
+        >
+        <label
+          ><input type="checkbox" name="likes_easy" value="yes" checked />
+          Простота использования</label
+        ><br />
+
+        <label
+          >Дата посещения:
+          <input type="date" name="visit_date" value="2025-11-01" /> </label
+        ><br />
+
+        <label
+          >Пароль для подтверждения:
+          <input
+            type="password"
+            name="confirm_password"
+            value="12345"
+          /> </label
+        ><br />
+
+        <input type="hidden" name="source" value="leonidov_site_feedback" />
+
+        <input type="submit" value="Отправить отзыв" />
+      </form>
+    </section>
+    <a href="#head" class="btn">
+      <h3>К началу страницы</h3>
+      <img src="./img/arrowtop.svg" alt="" />
+    </a>
+  </body>
+</html>
